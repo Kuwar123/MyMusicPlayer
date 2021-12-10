@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/ms"
+    tools:context=".loginSqLite">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/images" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:hint="User Name"
+        android:textSize="25dp"
+        android:layout_below="@+id/imageView"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/username"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repassword"
+        android:hint="Renter Password"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/password"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignUp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:layout_below="@id/repassword"
+        android:backgroundTint="@color/design_default_color_primary_dark"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignIn"
+        android:text="Existing User! \n Go to Sign In Page"
+        android:textAllCaps="false"
+        android:layout_below="@id/btnSignUp"
+        android:backgroundTint="@color/purple_500"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+</RelativeLayout>
